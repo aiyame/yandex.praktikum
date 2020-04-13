@@ -20,6 +20,15 @@ let image = document.querySelector('.image');
 phrase.textContent = getRandomElement(phrases);
 
 button.addEventListener('click', function(){
-        phrase.textContent = getRandomElement(phrases);
-    }
+        let randomElement = getRandomElement(phrases);
+        phrase.textContent = randomElement;
+
+        if (randomElement.length > 40) {
+            advice.style.fontSize = '33px';
+        } else {
+            advice.stype.fontSize = '42px';
+        }
+
+}
+
 );
