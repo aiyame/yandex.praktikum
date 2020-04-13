@@ -3,8 +3,8 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
-*.iml
+../.idea
+.idea/yandex.praktikum.iml
 out
 gen
 ### JetBrains template
