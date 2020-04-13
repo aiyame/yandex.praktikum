@@ -26,7 +26,9 @@ phrase.textContent = getRandomElement(phrases);
 button.addEventListener('click', function(){
         let randomElement = getRandomElement(phrases);
         phrase.textContent = randomElement.text;
+        smoothly(phrase, 'textContent', randomElement.text);
         image.src = randomElement.image;
+        smoothly(image, 'src', randomElement.image);
 
         if (randomElement.length > 40) {
             advice.style.fontSize = '33px';
